@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/FindWordInSong/static/css/main.a617e044.chunk.css",
+    "main.js": "/FindWordInSong/static/js/main.fc420c02.chunk.js",
+    "main.js.map": "/FindWordInSong/static/js/main.fc420c02.chunk.js.map",
+    "runtime-main.js": "/FindWordInSong/static/js/runtime-main.271c7f9c.js",
+    "runtime-main.js.map": "/FindWordInSong/static/js/runtime-main.271c7f9c.js.map",
+    "static/js/2.6257276d.chunk.js": "/FindWordInSong/static/js/2.6257276d.chunk.js",
+    "static/js/2.6257276d.chunk.js.map": "/FindWordInSong/static/js/2.6257276d.chunk.js.map",
+    "static/js/3.2eb145ff.chunk.js": "/FindWordInSong/static/js/3.2eb145ff.chunk.js",
+    "static/js/3.2eb145ff.chunk.js.map": "/FindWordInSong/static/js/3.2eb145ff.chunk.js.map",
+    "index.html": "/FindWordInSong/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/FindWordInSong/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.6257276d.chunk.js.LICENSE.txt": "/FindWordInSong/static/js/2.6257276d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.271c7f9c.js",
+    "static/js/2.6257276d.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.fc420c02.chunk.js"
+  ]
+}
