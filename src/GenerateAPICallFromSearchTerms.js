@@ -27,6 +27,6 @@ export default function GenerateAPICallFromSearchTerms(props){
                 artist = {props.artist}
                 soughtWord = {props.inputs.soughtWord}
             />
-        </div>  
+        </div> 
     )
 }

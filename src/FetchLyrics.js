@@ -20,8 +20,8 @@ export default function FetchLyrics(props) {
             <br></br>
             {lyrics}
                 <FindWordInLyrics
-                    rawLyrics = {lyrics}
-                    soughtWord = {props.soughtWord}
+                    rawLyrics = {lyrics.toLowerCase()}
+                    soughtWord = {props.soughtWord.toLowerCase()}
                 />
         </div>
     )        

@@ -1,29 +1,42 @@
 //filters out punctuation, 
 //and then counts how many times the 'soughtWord' occurs in the song
+//filter out '\r' and '\n' as well
+//account for lyrics with 'paroles de la chanson {song} par {artist} 
+
 
 export default function FindWordInLyrics(props){
-  const punctuation = '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'
-  const lyricsWithNoPunctuation = RemovePunctuation()
+  
+  function replaceNewLineWithSpace(characters){
+      return characters.replace(/\n/g,' ')
+  }
   
   function RemovePunctuation() {
-      return props.rawLyrics.split('')
-      .filter((letter) => {
+    const punctuation = '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~\r'
+    const lyricsNoNewLines = replaceNewLineWithSpace(props.rawLyrics)
+    const splitLyrics = lyricsNoNewLines.split('')
+    const filteredLyrics = splitLyrics.filter((letter) => {
         return punctuation.indexOf(letter) === -1
-        }).join('')
+        })
+      console.log(filteredLyrics)
+      return filteredLyrics.join('')
     }
 
   function main(){
-    return lyricsWithNoPunctuation.split(' ').filter((word) =>{
-      return word.toLowerCase() === props.soughtWord.toLowerCase()
-    }).length
+    const lyricsWithNoPunctuation = RemovePunctuation()
+    const splitLyrics = lyricsWithNoPunctuation.split(' ')
+    const returnArray = splitLyrics.filter((word) =>{
+      return word === props.soughtWord
+    })
+    return returnArray.length
   }
 
   const numberOfOccurences = main();
+
   return( 
     <>
     <br></br>
     <br></br>
-    The word {props.soughtWord} appears {numberOfOccurences} times in this song. 
+    The word "{props.soughtWord.toUpperCase()}" appears {numberOfOccurences} times in this song. 
     </>
   )
 }
