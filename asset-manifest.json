@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/FindWordInSong/static/css/main.a617e044.chunk.css",
-    "main.js": "/FindWordInSong/static/js/main.d39ca25d.chunk.js",
-    "main.js.map": "/FindWordInSong/static/js/main.d39ca25d.chunk.js.map",
+    "main.js": "/FindWordInSong/static/js/main.af38a483.chunk.js",
+    "main.js.map": "/FindWordInSong/static/js/main.af38a483.chunk.js.map",
     "runtime-main.js": "/FindWordInSong/static/js/runtime-main.271c7f9c.js",
     "runtime-main.js.map": "/FindWordInSong/static/js/runtime-main.271c7f9c.js.map",
     "static/js/2.6257276d.chunk.js": "/FindWordInSong/static/js/2.6257276d.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.271c7f9c.js",
     "static/js/2.6257276d.chunk.js",
     "static/css/main.a617e044.chunk.css",
-    "static/js/main.d39ca25d.chunk.js"
+    "static/js/main.af38a483.chunk.js"
   ]
 }
